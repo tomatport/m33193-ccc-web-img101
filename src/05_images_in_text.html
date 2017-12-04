@@ -3,18 +3,49 @@
 <title>Images in text</title>
 
 <style>
-    #teapot {
+    #crest {
+        width: 70vw;
     }
 
     .emoji {
-        height: 1em;
+        width: 2em;
+        vertical-align: middle;
     }
+
+    .emoji:nth-of-type(2) {
+      filter: hue-rotate(90deg);
+    }
+    .emoji:nth-of-type(3) {
+      filter: hue-rotate(180deg);
+    }
+    .emoji:nth-of-type(4) {
+      filter: hue-rotate(270deg);
+    }
+
+
+
+    body, #crest {
+      text-align: justify;
+      width: 70vw;
+      margin: auto;
+    }
+
+    p, li {
+      line-height: 2em;
+      margin-bottom: 2em;
+    }
+
 </style>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <img id=teapot src="i/teapot.png" class=emoji alt="A picture of a tall creamy white porcelain teapot." > do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <img src="i/teapot.png" class=emoji alt="A second picture of a tall creamy white porcelain teapot." >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <img src="i/teapot.png" class=emoji alt="Yet another picture of a tall creamy white porcelain teapot." >laborum.</p>
+<img
+  id=crest
+  src="i/uop/crest.png"
+  alt="The university crest.">
+
+<p>The University of Portsmouth Crest (<img src="i/uop/crest.png" class=emoji alt="University of Portsmouth Crest">) has been through several iterations and exists alongside the logo for use in more formal circumstances.  When a single colour version of the crest is used it can be recoloured (e.g. <img src="i/uop/crest.png" class=emoji alt="UoP Crest"><img src="i/uop/crest.png" class='emoji rainbow' alt="UoP Crest"><img src="i/uop/crest.png" class=emoji alt="UoP Crest">) in order to fit with whatever purpose is necessary.
 
 <ol>
-    <li>Here there are three teapots inline.
-    <li>IDs must be unique, so if we want to style all teapots the same we need a class, so they all have a class attribute of <code>emoji</code>.
-    <li>If we make the height of the image 1em (using CSS) observe that the images are now the same height as the text they are embedded in.
+    <li>Here images are included inline in sentences.
+    <li>If we want to style all the in-text crests in the same way we can use a class.  We can't style <code>img</code> directly without affecting the crest at the top of the page.
+    <li>If we make the width of the image 2em (using CSS) observe that the images are now a similar size to the content they are embedded in.
 </ol>

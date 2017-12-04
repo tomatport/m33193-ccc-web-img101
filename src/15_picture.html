@@ -1,0 +1,40 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Responsive Images using Picture</title>
+
+<style>
+
+figure {
+    width: 10em;
+    float: left;
+    padding: 2em;
+    border: thin black solid;
+    margin: 2em;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
+
+figure>img {
+    width: 100%
+}
+
+figcaption {
+  padding-top: 1em;
+}
+</style>
+
+
+<p>
+  <figure>
+    <picture>
+      <source type="image/svg+xml" srcset="i/uop/logo.svg" />
+      <source type="image/webp" srcset="i/uop/logo.webp" />
+      <source type="image/png" srcset="i/uop/logo.png" />
+      <img src="i/uop/logo.gif" alt="University of Portsmouth Logo" />
+    </picture>
+    <figcaption>The University of Portsmouth Logo.</figcaption>
+  </figure>
+
+  The University of Portsmouth changed it's logo in 2017, in order to better reflect its identity and mission.
+</p>
