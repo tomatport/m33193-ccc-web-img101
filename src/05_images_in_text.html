@@ -7,22 +7,15 @@
         width: 70vw;
     }
 
-    .emoji {
-        width: 2em;
-        vertical-align: middle;
-    }
-
-    .emoji:nth-of-type(2) {
+    .unicrest:nth-of-type(2) {
       filter: hue-rotate(90deg);
     }
-    .emoji:nth-of-type(3) {
+    .unicrest:nth-of-type(3) {
       filter: hue-rotate(180deg);
     }
-    .emoji:nth-of-type(4) {
+    .unicrest:nth-of-type(4) {
       filter: hue-rotate(270deg);
     }
-
-
 
     body, #crest {
       text-align: justify;
@@ -35,17 +28,27 @@
       margin-bottom: 2em;
     }
 
+    .unicrest {
+        width: 5em;
+        vertical-align: middle;
+    }
+
+    img {
+      /* transform: scaleY(-1); */
+    }
+
+
 </style>
 
 <img
-  id=crest
+  id="crest"
   src="i/uop/crest.png"
   alt="The university crest.">
 
-<p>The University of Portsmouth Crest (<img src="i/uop/crest.png" class=emoji alt="University of Portsmouth Crest">) has been through several iterations and exists alongside the logo for use in more formal circumstances.  When a single colour version of the crest is used it can be recoloured (e.g. <img src="i/uop/crest.png" class=emoji alt="UoP Crest"><img src="i/uop/crest.png" class='emoji rainbow' alt="UoP Crest"><img src="i/uop/crest.png" class=emoji alt="UoP Crest">) in order to fit with whatever purpose is necessary.
+<p>The University of Portsmouth Crest (<img src="i/uop/crest.png" class="unicrest" alt="University of Portsmouth Crest">) has been through several iterations and exists alongside the logo for use in more formal circumstances.  When a single colour version of the crest is used it can be recoloured (e.g. <img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest rainbow" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest" alt="UoP Crest">) in order to fit with whatever purpose is necessary.</p>
 
-<ol>
-    <li>Here images are included inline in sentences.
-    <li>If we want to style all the in-text crests in the same way we can use a class.  We can't style <code>img</code> directly without affecting the crest at the top of the page.
-    <li>If we make the width of the image 2em (using CSS) observe that the images are now a similar size to the content they are embedded in.
-</ol>
+<ul>
+    <li>Here, images are included inline in sentences.</li>
+    <li>If we want to style all the in-text crests in the same way use a class (in this instance it's called <code>.unicrest</code>).  We can't style <code>img</code> directly without affecting the crest at the top of the page.</li>
+    <li>If we make the width of the image 2em (using CSS) observe that the images are now a similar size to the content they are embedded in.</li>
+</ul>

@@ -3,31 +3,26 @@
 <title>CSS IDs</title>
 
 <style>
-    body {
-        margin: 0;
-    }
-
-    #crest {
-        width: 39vw;
-    }
-
+    body { margin: 0; }
     #uni {
         width: 59vw;
+        /* visibility: hidden; */
+    }
+    #crest {
+        width: 39vw;
+        /* opacity: 0.5; */
     }
 </style>
 
-<img
-  id=uni src="i/uop/uop.png"
-  alt="A University of Portsmouth Building.">
-<img
-  id=crest
-  src="i/uop/crest.png"
-  alt="The university crest.">
+<img id="uni"   src="i/uop/uop.png"   alt="A University of Portsmouth Building.">
+<img id="crest" src="i/uop/crest.png" alt="The university crest.">
 
 <ul>
-    <li>In this example each image is uniquely identified with an ID, so a specific CSS selector can be used.  e.g....<ol>
-      <li>To change the image opacity add <code>opacity: 0.5;</code> to the <code>#crest</code> rule
-      <li>To hide the <code>#uni</code> element completely you can add either <code>visibility: hidden;</code> or <code>display: none;</code>
-    </ol>
-    <li>What's the visual difference between <code>visibility: hidden;</code> or <code>display: none;</code>
+    <li>In this example each image is uniquely identified with an ID, so a specific CSS selector can be used.  e.g...
+        <ul>
+            <li>Add <code>opacity: 0.5;</code> to the <code>#crest</code> rule.</li>
+            <li>Hide the <code>#uni</code> element completely by adding either <code>visibility: hidden;</code> or <code>display: none;</code></li>
+        </ul>
+    </li>
+    <li>Notice that there is a visual difference between <code>visibility: hidden;</code> or <code>display: none;</code></li>
 </ul>

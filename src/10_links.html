@@ -8,26 +8,27 @@
     }
 </style>
 
+<h1>Making Links</h1>
 
-<ol>
-    <li>To turn an image into a link, just wrap it in an anchor element (i.e. <code>&lt;a href=""&gt;&lt;/a&gt;</code>)
-    <li>The teapots here are relative links to fragments within this document.
-    <li>Notice that here the <code>target</code> pseudo selector is used to color the target of the previously clicked link.
-    <li>Notice the fragment appears at the end of the URL in the address bar and changes with each click.
-</ol>
+<ul>
+    <li>To turn an image into a link, just wrap it in an anchor element (i.e. <code>&lt;a href=""&gt;&lt;/a&gt;</code>)</li>
+    <li>The teapots here are relative links to <em>fragments</em> within this document.</li>
+    <li>Notice that here the <code>target</code> pseudo selector is used to color the target of the previously clicked link.</li>
+    <li>Notice the fragment appears at the end of the URL in the address bar and changes with each click.</li>
+</ul>
 
-<a href=#one>
- <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+<a href="#one">
+ <img src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
 </a>
 
-<a href=#two>
-    <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+<a href="#two">
+    <img src="i/teapot.png" alt="A second picture of a tall creamy white porcelain teapot.">
 </a>
 
-<a href=#three>
-    <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+<a href="#three">
+    <img src="i/teapot.png" alt="Another identical picture of a tall creamy white porcelain teapot.">
 </a>
 
-<p id=one>The first teapot was clicked.
-<p id=two>The second teapot was clicked.
-<p id=three>The third teapot was clicked.
+<p id="one">The first teapot was clicked.</p>
+<p id="two">The second teapot was clicked.</p>
+<p id="three">The third teapot was clicked.</p>
