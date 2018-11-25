@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Responsive Images using Picture</title>
+
+<style>
+    img {
+        width: 100%;
+    }
+</style>
+
+<picture>
+    <source media="(monochrome) and (orientation: landscape)" srcset="i/logo/linear-solid.png">
+    <source media="(monochrome) and (orientation: portrait)" srcset="i/logo/stacked-solid.png">
+    <source media="(orientation: landscape)" srcset="i/logo/linear.png">
+    <source media="(orientation: portrait)" srcset="i/logo/stacked.png">
+  <img src="" alt="University of Portsmouth Logo" />
+</picture>
+
+<p>When using source...</p>
+<ul>
+<li>we can use media queries so that a different image shows when the device is setup as portrait or landscape.</li>
+<li>we can use media queries so that devices with more limited capabilities show simpler content.</li>
+<li>we can combine thes equeries.</li>
+</ul>
