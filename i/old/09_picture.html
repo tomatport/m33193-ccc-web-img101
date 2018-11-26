@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Responsive Images using Picture</title>
+
+<style>
+    body {
+        margin: 0;
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+    p, h1 {
+        padding: 1rem 2rem;
+    }
+</style>
+
+<h1>I caught a fish and it was <em>this</em> big:</h1>
+
+<picture>
+    <source media="(min-width: 700px)" srcset="i/fish/thisbig.png">
+    <source media="(min-width: 600px)" srcset="i/fish/thatbig.png">
+    <source media="(min-width: 500px)" srcset="i/fish/sobig.png">
+    <source srcset="i/fish/tiddler.png">
+    <img
+        src="i/oldbrowser.png"
+        alt="This image contains text advising you that your browser is too old." >
+</picture>
+
+<p>The <code>picture</code> element can be used to create responsive images which choose an appropriate image basedon the size of the containing area.  In this case the container is the <code>body</code>, and the image is set to fill the width of the body (<code>100vw</code>).  The bitmap that gets chosen by the browser depends on the size of the window.</p>
+
+<p>NB: The <code>img</code> element is <em>required</em>.  The picture element provides the <code>img</code> element with a rich context and new mechanisms for selecting source images that are presented therein.  This is why when we want to style the image, we can still style <code>img</code> directly (rather than the <code>picture</code> element).</p>
