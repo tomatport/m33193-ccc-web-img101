@@ -3,24 +3,15 @@
 <title>Images in text</title>
 
 <style>
-    #crest {
-        width: 70vw;
-    }
-
-    .unicrest:nth-of-type(2) {
-      filter: hue-rotate(90deg);
-    }
-    .unicrest:nth-of-type(3) {
-      filter: hue-rotate(180deg);
-    }
-    .unicrest:nth-of-type(4) {
-      filter: hue-rotate(270deg);
-    }
 
     body, #crest {
       text-align: justify;
       width: 70vw;
       margin: auto;
+    }
+
+    #crest {
+      /* transform: scaleY(-1); */
     }
 
     p, li {
@@ -29,8 +20,19 @@
     }
 
     .unicrest {
-        width: 5em;
-        vertical-align: middle;
+        height: 2em;
+        /* border: 1px  solid black; */
+        /* vertical-align: middle; */
+    }
+
+    .unicrest:nth-of-type(4n+1) {
+      filter: hue-rotate(90deg);
+    }
+    .unicrest:nth-of-type(4n+2) {
+      filter: hue-rotate(180deg);
+    }
+    .unicrest:nth-of-type(4n+3) {
+      filter: hue-rotate(270deg);
     }
 
     img {
@@ -50,5 +52,12 @@
 <ul>
     <li>Here, images are included inline in sentences.</li>
     <li>If we want to style all the in-text crests in the same way use a class (in this instance it's called <code>.unicrest</code>).  We can't style <code>img</code> directly without affecting the crest at the top of the page.</li>
-    <li>If we make the width of the image 2em (using CSS) observe that the images are now a similar size to the content they are embedded in.</li>
+    <li>If we make the height of the image 2em (using CSS) observe that the images are now a similar size to the content they are embedded in.</li>
 </ul>
+
+
+<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">

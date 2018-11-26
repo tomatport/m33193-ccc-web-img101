@@ -4,20 +4,35 @@
 
 <style>
     .teapot {
-      /* float: left; */
+        float: left;
+        /* float: right; */
+        vertical-align: middle;
+        /* padding-left: 4em; */
     }
 
-    ol {
-     /* clear: both; */
+    article {
+        /* clear: both; */
     }
 </style>
 
-<p><img src="i/teapot.png" class="teapot" alt="A picture of a tall creamy white porcelain teapot." >Making a pot of tea is a splendid thing.  There is scientific evidence that drinking tea among friends can reduce blood pressure and increase wellbeing.  Some people drink a lot of tea, others prefer coffee (and they are wrong to make this choice, but we must allow them their folly).</p>
+<p>
+    Making a pot of tea is a splendid thing. There is scientific evidence that drinking tea among friends can reduce
+    blood pressure and increase wellbeing. <img src="i/teapot.png" class="teapot" alt="A picture of a tall creamy white porcelain teapot.">Some
+    people drink a lot of tea, others prefer coffee (and they are wrong to make this choice, but we must allow them
+    their folly).</p>
 
-<ol>
-    <li>Try adding <code>float: left;</code> to the teapot class.</li>
-    <li>Observe the run-over on this list.</li>
-    <li>Add <code>clear: both</code> to the <code>ol</code> to ensure that doesn't happen</li>
-    <li>Notice the image is at the start of the paragraph, after the p tag, but before the text.  What do you think will happen if you move it half way through the paragraph?</li>
-    <li>Try also floating to the <code>right</code></li>
-</ol>
+<article>
+
+    <p>Images can be <code>float</code><em>ed</em> to the <code>left</code> or <code>right</code> of other elements.</p>
+    <p>Inline content such as text will flow around the rectangular outline of the image.</p>
+
+    <h1>Experiment</h1>
+
+    <ol>
+        <li>Try adding <code>float: right;</code> to the teapot class.</li>
+        <li>Observe that the rest odf the article is also reformatted.  Add <code>clear: both</code> to the <code>article</code> to ensure that doesn't happen</li>
+        <li>Try adding <code>padding-left: 4em;</code> to the teapot class so that the text stays further away.</li>
+        <li>Notice the image is way through the paragraph. What do you think will happen if you move it to the start of
+            the paragraph, after the p tag, but before the text?</li>
+    </ol>
+</article>

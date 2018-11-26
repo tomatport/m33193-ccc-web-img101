@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<title>Responsive Images using Picture</title>
+
+<style>
+    body { margin: 0; }
+    h1, p, img { margin: 2em;}
+    @media (max-width: 3200px) { img { width: 100vw; border: thick red solid; } }
+    @media (max-width: 1600px) { img { width: 100vw; border: thick blue solid; } }
+    @media (max-width: 1200px) { img { width: 75vw; border: thick purple solid; } }
+    @media (max-width: 800px) { img { width: 50vw; border: thick green solid; } }
+    @media (max-width: 400px) { img { width: 25vw; border: thick green solid; } }
+</style>
+
+<h1>Elmer</h1>
+
+    <img id="img1"
+        src="i/elmer/400x800.png"
+        alt="This is Elmer, the patchwork image."
+        srcset="i/elmer/400x800.png 400w, i/elmer/600x800.png 600w, i/elmer/1200x800.png 1200w, i/elmer/1600x800.png 1600w, i/elmer/3200x800.png 3200w"
+        
+        >
+
+    <!-- <img id="img2"
+        alt="This is Elmer, the patchwork image, but sized in CSS."      
+        srcset="i/elmer/400x800.png 400w, i/elmer/600x800.png 600w, i/elmer/1200x800.png 1200w, i/elmer/1600x800.png 1600w, i/elmer/3200x800.png 3200w" >
+     -->
+
+<p>When using <code>srcset</code> the browser decides which image to download.</p>
+
+<p>The 'sizes' attribute here muddies the waters of separating form and content - the same results can be achieved using CSS.</p>

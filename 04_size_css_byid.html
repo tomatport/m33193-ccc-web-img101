@@ -3,26 +3,49 @@
 <title>CSS IDs</title>
 
 <style>
-    body { margin: 0; }
+    
+    body {
+        width: 100vw;
+        margin: 0;
+        padding:0;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: top;
+    }
+
     #uni {
-        width: 59vw;
+        width: 60vw;
         /* visibility: hidden; */
+        /* display: none; */
     }
+
     #crest {
-        width: 39vw;
-        /* opacity: 0.5; */
+        width: 40vw;
+        /* opacity: 0; */
     }
+
+    article {
+        padding: 1em;
+    }
+
 </style>
 
-<img id="uni"   src="i/uop/uop.png"   alt="A University of Portsmouth Building.">
-<img id="crest" src="i/uop/crest.png" alt="The university crest.">
+<img id="uni"   src="i/uop/uop.png"   alt="A University of Portsmouth Building."><img id="crest" src="i/uop/crest.png" alt="The university crest.">
 
-<ul>
-    <li>In this example each image is uniquely identified with an ID, so a specific CSS selector can be used.  e.g...
-        <ul>
-            <li>Add <code>opacity: 0.5;</code> to the <code>#crest</code> rule.</li>
-            <li>Hide the <code>#uni</code> element completely by adding either <code>visibility: hidden;</code> or <code>display: none;</code></li>
-        </ul>
-    </li>
-    <li>Notice that there is a visual difference between <code>visibility: hidden;</code> or <code>display: none;</code></li>
-</ul>
+<article>
+
+    <p>In this example each image is uniquely identified with an ID, sospecific CSS selector can be used to change individual images.
+
+    <h1>Experiment</h1>
+
+
+    <ul>
+        <li>Add <code>opacity: 0.5;</code> to the <code>#crest</code> rule.</li>
+        <li>Hide the <code>#uni</code> element completely by adding either <code>visibility: hidden;</code> or <code>display: none;</code></li>
+    </ul>
+        
+    <p>Notice that there is a visual difference between <code>visibility: hidden;</code> or <code>display: none;</code></p>
+
+</article>
