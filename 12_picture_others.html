@@ -3,16 +3,24 @@
 <title>Responsive Images using Picture</title>
 
 <style>
-    img {
-        width: 254px;
-    }
+  img {
+    width: 254px;
+  }
 </style>
 
 <picture>
-    <source type="image/webp" srcset="i/uop/logo.webp" />
-    <source type="image/svg+xml" srcset="i/uop/logo.svg" />
-    <source type="image/png" srcset="i/uop/logo.png" />
-    <img src="i/uop/logo.gif" alt="University of Portsmouth Logo" />
+  <source
+    type="image/webp"
+    srcset="i/uop/logo.webp">
+  <source
+    type="image/svg+xml"
+    srcset="i/uop/logo.svg">
+  <source
+    type="image/png"
+    srcset="i/uop/logo.png">
+  <img
+    src="i/uop/logo.gif"
+    alt="University of Portsmouth Logo">
 </picture>
 
 <p>When using source, we can provide alternative images so that browsers with different capabilities can show their preferred image format.</p>
