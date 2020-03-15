@@ -14,7 +14,7 @@
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-    
+
         display: grid;
         grid-template-columns: 12em 1fr;
         grid-template-rows: auto 1fr;
@@ -84,7 +84,7 @@
             <li><a href=07_captions.html>Figures &amp; Captions</a></li>
             <li><a href=08_srcset.html>srcset &amp; sizes</a></li>
             <li><a href=09_srcset_with_css.html>srcset with CSS</a></li>
-            
+
             <li><a href=10_picture.html>Picture &amp; Source</a></li>
             <li><a href=11_picture_fish.html>Picture &amp; Source</a></li>
             <li><a href=12_picture_others.html>Other Picture Types</a></li>
@@ -105,11 +105,10 @@
      */
     const links = document.querySelectorAll("nav a");
     const f1 = document.querySelector("#f1");
-    const f2 = document.querySelector("#f2");
 
     /*
      * Find all menu items and intercept the click
-     * so that links open in the iFrame. 
+     * so that links open in the iFrame.
      */
     for (const link of links) {
         link.addEventListener("click", (evt) => {
@@ -122,14 +121,14 @@
 
     activate(links[0]);
 
- 
+
     /*
      * Allow for Ctrl-click or Cmd-click to
      * work as normal and open the link in
      * the background.
      */
     let overrideKey = false;
- 
+
     document.addEventListener("keyup", (e) => {
         overrideKey = false;
     });
