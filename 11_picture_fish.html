@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Responsive Images using Picture</title>
 
 <style>
@@ -82,7 +83,7 @@
 
 
   <p>Currently the viewport is <span class=pix>0</span> pixels wide as you adjust the size of the window this figure will change.  The image will also change, but that is all managed by the browser thanks to the <code>picture</code> element.
-    
+
 
   <p>The vieport sizes defined in the <code>picture</code> element are...</p>
   <ul>
@@ -123,7 +124,7 @@
     }
 
     const current = document.querySelector(`[data-size='${selector}'`);
-    
+
     if (current) {
       current.classList.add("active");
     }
@@ -131,4 +132,3 @@
 
   doPix();
 </script>
-  

@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>srcset</title>
 
 <style>
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
   }
-  h1, p, img { 
+  h1, p, img {
     margin: 2rem;
   }
   img {
@@ -37,8 +37,8 @@
   <h1>Using <code>srcset</code></h1>
 
   <p><a href=http://w3c.github.io/html/semantics-embedded-content.html#element-attrdef-img-srcset><code>srcset</code></a> is an optional attribute that allows multiple comma-separated image URLs to be specified.  It's up to the browser to select which ne </p>
-  
-  <img 
+
+  <img
     src="i/logo.png"
     alt="This image has a srcset."
     srcset="
@@ -59,7 +59,7 @@
   <h1>Width Hints</h1>
 
   <p>In addition to the URL we can add a 'width' hint which comes after the URL.  The browser will use the size of the space in which the image will go when selecting which image to load.  In this way your page can respond to its resolution.</p>
-  
+
   <img
     src="i/logo.png"
     alt="This image has a srcset with width hints."
@@ -80,10 +80,10 @@
   <h1>Adding <code>sizes</code></h1>
 
   <p>The <code>sizes</code> attribute is closely related to <code>srcset</code>.  It helps the browser decide which image to use when the browser is different widths.</p>
-  
+
   <p>If a <code>sizes</code> attribute is used there must be one entry for each url in the <code>srcset</code> attribute.</p>
 
-  <img 
+  <img
   src="i/logo.png"
   alt="This image has both a srcset and sizes attribute."
   srcset="

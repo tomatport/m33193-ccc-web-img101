@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Responsive Images using Picture</title>
 
 <style>
@@ -39,7 +39,7 @@
             flex-direction: row;
             overflow: scroll;
         }
-        
+
         img {
             width: auto;
             height: 100vh;
@@ -72,24 +72,24 @@
         <source
             media="(min-width: 1600px)"
             srcset="
-                i/elmer/800x800.png 1x, 
-                i/elmer/1600x1600.png 2x, 
+                i/elmer/800x800.png 1x,
+                i/elmer/1600x1600.png 2x,
                 i/elmer/3200x3200.png 3x">
         <!-- On smaller screens a sidebar-style image  -->
         <source
             media="(min-width: 800px)"
             srcset="
-                i/elmer/200x800.png 1x, 
-                i/elmer/400x1600.png 2x, 
+                i/elmer/200x800.png 1x,
+                i/elmer/400x1600.png 2x,
                 i/elmer/800x3200.png 3x">
         <!-- Default is a wide masthead shape -->
         <source
             srcset="
-                i/elmer/800x200.png 1x, 
-                i/elmer/1600x400.png 2x, 
+                i/elmer/800x200.png 1x,
+                i/elmer/1600x400.png 2x,
                 i/elmer/3200x800.png 3x">
         <!-- fallback image (required)-->
-        <img 
+        <img
             src="i/400x400.png"
             alt="A very dynamic image.">
     </picture>

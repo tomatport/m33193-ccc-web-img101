@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSS Shapes</title>
 
 <style>
@@ -77,7 +78,7 @@
   <p>In this first example, a square image is made to look like a "D" by giving it two rounded corners (via <code>border-radius</code> in the CSS).  Text flows smoothly around it thanks to the <code>shape-outside</code> property which is set to be a circle.</p>
 
   <p>The size of the image is set to be 50% of the width or height of the viewport (whichever is the smaller) via <code>vmin</code>.</p>
-   
+
   <p>The second example uses a polygon to define the shape of the edge of the teapot - this is quite a lot of work but very accurate on an iregular shape.
 
   <p>The third example takes advantage of the <code>shape-image-threshold</code> property.  This works perfectly on Firefox (developer edition) but Chrome seems unreliable... it is fairly new.  A useful tool for checking the support for features is <a href="https://caniuse.com/#feat=css-shapes">CanIUse.com</a>.  Remember, when writing for the web, it's best to assume something will not work, and create a site that works well by default, and which is then progressively enhanced as the viewer's browser supports different feaures.</p>

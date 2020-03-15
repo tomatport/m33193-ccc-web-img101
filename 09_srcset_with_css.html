@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>srcset+css</title>
 
 <style>
@@ -23,7 +23,7 @@
         padding: 0 1rem 1rem 1rem;
     }
 
-    img { 
+    img {
         align-self: center;
         flex: 1 0 auto;
     }
@@ -48,7 +48,7 @@
 
 <main>
 
-    <img 
+    <img
     src="i/logo.png"
     alt="This image has a srcset that features pixel density."
     srcset="
@@ -70,15 +70,14 @@
 <script>
 
         window.addEventListener("resize", doPix);
-    
+
         function doPix() {
             const pixs = document.querySelectorAll(".pix");
             for (const pix of pixs) {
                 pix.textContent = document.documentElement.clientWidth
             }
         }
-    
+
         doPix();
-    
+
     </script>
-    
