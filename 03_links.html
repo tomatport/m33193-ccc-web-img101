@@ -46,13 +46,22 @@ section {
 
 <p>To turn any image into a link, wrap it in an anchor element (i.e. <code>&lt;a href=""&gt;&lt;img src="" alt=""&gt;&lt;/a&gt;</code>)</p>
 
-<li>Each teapot is wrapped in a link to a <em>fragment</em> URL - each frament addresses an element in this document.</li>
+<p>Below, each teapot is wrapped in a link to a <em>fragment</em> URL.  Each fragment URL addresses an element within this document.</p>
 
+<p>Notice that:</p>
 <ul>
-  <li>Notice the fragment appears at the end of the URL in the address bar and changes with each click.</li>
-  <li>Notice that here the <code>target</code> pseudo selector is used to color the target of anything that is clicked.</li>
+  <li>The fragment appears at the end of the URL in the address bar and changes with each click.</li>
+  <li>In the css a <code>:target</code> <em>pseudo selector</em> is used to color the background of the element with the same ID as the fragment.</li>
+  <li>If <em>necessary</em>, the document is scrolled until the target is visible.</li>
+  <li>The anchor that wraps the university logo has a longer URL that contains the full <code>http://port.ac.uk</code> address.  Anchors can point to parts of the current document, or link to any other document on the web.</li>
 </ul>
 
+<p>Look at each of the CSS rules.  Try to deduce:</p>
+<ul>
+  <li>The purpose of each selector.</li>
+  <li>What each property affects - if you're not sure, try commenting out each property to see what changes.</li>
+</ul>
+<p>NB: Atom has a keyboard shortcut for toggling line comments (<code>ctrl</code> + <code>/</code> on Windows, <code>⌘</code> + <code>/</code> on Mac).</p>
 <nav>
 	<a href="#one">
 		<img

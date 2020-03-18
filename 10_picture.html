@@ -101,17 +101,15 @@
 
         <h1><code>Picture</code> &amp; <code>Source</code></h1>
 
-        <p>The picture element lets us use different images in different situations.  It contains multiple <code>source</code > elements, each of which defines a rule for when it is relevant and then specifies which image to use via its <code>srcset</code> attribute.</p>
+        <p>The <code>picture</code> element lets us use different images in different situations.  It contains multiple <code>source</code > elements, each of which defines a rule for when it is relevant and then specifies which image to use via its <code>srcset</code> attribute.</p>
 
-        <p>In this example three shapes of image are used.  By default a wide horizontal masthead-style image is displayed.  If the screen is larger than 800 pixels wide, a tall thin sidebar image replaces the original masthead.  The CSS selector in the <code>source</code> element is complemented by an <code>@media</code> query that changes the direction of the <code>flex</code> layout from column to row.</p>
+        <p>In this example three shapes of image are used.  By default a small-screen mobile devide is assumed, so a wide horizontal masthead-style image is displayed.  If the screen is larger than 800 pixels wide, a tall thin sidebar image replaces the original masthead.  The CSS selector in the <code>source</code> element is complemented by an <code>@media</code> query that changes the direction of the <code>flex</code> layout from column to row.</p>
 
         <p>Currently the page is <span class=pix>0</span> pixels wide.</p>
 
         <p>If the page grows in width beyond 1600 pixels wide, a third layout is introduced, where a very large square version of the image is selected.</p>
 
         <p>Note that in all cases, three different sizes of image are provided to allow for screens with different pixel densities.</p>
-
-        <p>There is a transition set on the img element to make the jump smoother when desktops windows are resized.</p>
 
 </section>
 </main>

@@ -15,7 +15,7 @@
       /* transform: scaleY(-1); */
     }
 
-    p, li {
+    p {
       line-height: 2em;
       margin-bottom: 2em;
     }
@@ -50,23 +50,20 @@
   src="i/uop/crest.png"
   alt="The university crest.">
 
-<p id="#explain">The University of Portsmouth Crest (<img src="i/uop/crest.png" class="unicrest" alt="University of Portsmouth Crest">) has been through several iterations and exists alongside the logo for use in more formal circumstances.  When a single colour version of the crest is used it can be recoloured (e.g. <img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest" alt="UoP Crest">) in order to fit with whatever purpose is necessary.</p>
+<p id="#explain">The University of Portsmouth Crest (<img src="i/uop/crest.png" class="unicrest" alt="University of Portsmouth Crest">) has been through several iterations and exists alongside the logo for use in more formal circumstances.
 
-<ul>
-  <li>Here, images are included inline in sentences.</li>
+<p>The crest appears several times in this page, in two different sizes.  An ID selector (<code>#crest</code>) is used to set the size and layout of the first crest.  Subsequent crests are styled using a class selector (<code>.unicrest</code>).
 
-  <li>If we want to style all the in-text crests in the same way use a class (in this instance it's called <code>.unicrest</code>).<ul>
-    <li>Styling <code>img</code> directly would affect the crest at the top of the page.</li>
-  </ul></li>
+<p>The crest colour can event be changed by use of a filter, all using the same image, for example: <img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"><img src="i/uop/crest.png" class="unicrest" alt="UoP Crest"></p>
 
-  <li>If we make the height of the image 2em (using a CSS ix-in class) observe that the images below are now a similar size to the content they are embedded in.</li>
+<p>NB: Styling <code>img</code> directly would affect all images including the crest at the top of the page, so in this case we have avoided that.  Often, styling all <code>img</code> elements is not a useful approach.
 
-  <li>What happens if another six inline crest images are added to the <code>#explain</code> paragraph?</li>
-</ul>
+<p>Adjust the <code>.unicrest</code> class selector so that the height of the image is <code>2em</code>.  Observe that the images are now a similar size to the content they are embedded in.  The <code>line-height</code> for paragraphs is also <code>2em</code>.
 
+<p>The <code>.unicrest</code> class selector has two other commented-out properties.  <code>border</code> is useful to help you see what's happening.  <code>vertical-align</code> can be experimented with.
 
-<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
-<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
-<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
-<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
-<img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+<p>What do you expect to happen if another six crest images are added to this paragraph?
+  <img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+  <img src="i/uop/crest.png" class="unicrest ending" alt="UoP Crest">
+
+<p>Finally notice that there are two rules that include a transform statement.  Experiment with these to see why happens.  If both rules are uncommented does the double transform cancel itself out?  Why do you think this happens?

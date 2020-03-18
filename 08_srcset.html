@@ -28,17 +28,17 @@
 
   <h1>Using <code>src</code></h1>
 
-  <p>By default we can choose <em>one</em> image to be shown shown using the <code>src</code> attribute, and no matter how wide or narrow we make our our browser viewport, the same <em>one</em> image is shown.</p>
+  <p>In the original specification of the <code>img</code> element we could choose <em>one</em> image to be shown shown (by using the <code>src</code> attribute).  No matter how wide or narrow our browser viewport, the same <em>one</em> image is shown.
 
   <img id="default"
     src="i/elmer/400x400.png"
-    alt="This is Elmer, the patchwork image - it is not at all responsive.">
+    alt="This is Elmer, the patchwork image - it is not at all 'responsive'.">
 
   <p>The viewport is currently <span class=pix></span> pixels wide - if you resize the browser window (or if you're on a phone if you switch between landscape and portrait orientation, you should see this number change, but) the image will not change.</p>
 
   <h1>Using <code>srcset</code></h1>
 
-  <p><a href=http://w3c.github.io/html/semantics-embedded-content.html#element-attrdef-img-srcset><code>srcset</code></a> is an optional attribute that allows multiple comma-separated image URLs to be specified.  It's up to the browser to select which ne </p>
+  <p><a href=http://w3c.github.io/html/semantics-embedded-content.html#element-attrdef-img-srcset><code>srcset</code></a> is an optional attribute that allows multiple comma-separated image URLs to be specified.  It's up to the browser to select which one.</p>
 
   <img
     src="i/logo.png"
@@ -51,16 +51,15 @@
       i/elmer/3200x400.png"
       >
 
-  <p>When using <code>srcset</code> the browser decides which image to download.  It is likely (at the time of writing) that your browser will select the first image to display.</p>
-
-  <p>NB: The <code>src</code> attribute is always required (you will find it in all the examples here) because it provides default fallback content.</p>
-
-
-  <p>In addition to the URL we can add a 'width' hint which comes after the URL.  The browser will use the size of the space in which the image will go when selecting which image to load.  So on a phone with limited pixels, a small image may be shown, whereas on a hige desktop a massive 3200x400 image may be chosen.</p>
+  <p>When using <code>srcset</code> the browser decides which image to download.  It is likely (at the time of writing) that your browser will select the first image to display, so on its own the basic <code>srcset</code> attribute doesn't give us anything extra.</p>
 
   <h1>Width Hints</h1>
 
-  <p>In addition to the URL we can add a 'width' hint which comes after the URL.  The browser will use the size of the space in which the image will go when selecting which image to load.  In this way your page can respond to its resolution.</p>
+  <p>In addition to the image URL we can add a <code>width</code> hint which comes after the URL.  The browser will use the size of the space in which the image will go when selecting which image to load.  So on a phone with limited pixels, a small image may be shown, whereas on a huge desktop the massive 3200x400 image may be chosen.</p>
+
+  <p>NB: The <code>src</code> attribute is always required (you will find it in all the examples here) because it provides default fallback content.</p>
+
+  <p>Only one image is loaded initially.  If you start the page small and expand it, larger and larger images are loaded as necessary.  If you start the page large, the opposite may not be true.</p>
 
   <img
     src="i/logo.png"
@@ -73,11 +72,9 @@
     i/elmer/3200x400.png 3200w"
     >
 
-  <p>Only one image is loaded initially.  If you start the page small and expand it, larger and larger images are loaded as necessary.  If you start the page large, the opposite may not be true.</p>
-
   <p>Notice that as the page gets wider (currently <span class=pix></span> pixels) there may not be a direct correlation between the viewport width and the width of the image that is loaded.</p>
 
-  <p>Browsers that have cached a higher resolition version of an image may continute to use it, so to see this effect is may be necessary to use an 'incognito' window.</p>
+  <p>Browsers that have cached a higher resolution version of an image may continute to use it, so to see this effect is may be necessary to use an 'incognito' window.</p>
 
   <h1>Adding <code>sizes</code></h1>
 
@@ -116,6 +113,12 @@
     alt="This image has a srcset that features pixel density.">
 
   <p>Pixels are not all the same size - some screens have higher pixel-density than others.  The <code>srcset</code> attribute affords for coping with these situations by adding pixel density information to each URL.  The image displayed here will differ depending upon the pixel density of the device on which it is shown.</p>
+
+  <p>You can simulate differnt pixel densities in the device toolbar (look for DPR, short for Device Pixel Ratio).</p>
+
+  <img
+  src="i/dpr.png"
+  alt="The Device Pixel Ratio setting in Chrome 83.">
 
 </main>
 
