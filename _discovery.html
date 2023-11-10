@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Answers to Questions</title>
+
+<style>
+  body {
+    font-family: sans-serif;
+    max-width: 50em;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    
+    padding: 1rem 0.5rem;
+    background-color: #a900e2;
+    color: white;
+  }
+
+  blockquote.q {
+    font-style: italic;
+    border-left: 0.5rem solid #ccc;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  blockquote.q::before {
+    content: "Q: ";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  p.a {
+    border-left: 0.5rem solid #a900e2;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  
+  p.a::before {
+    content: "A: ";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    margin: 0;
+  }
+</style>
+
+<article>
+<h1><code>Answers to Questions</code></h1>
+
+
+<section>
+  <h2>01_img.html</h2>
+  <blockquote class="q">
+  What happens if newlines are added/removed <em>within</em> the element?
+  </blockquote>
+  <p class="a">
+    They are ignored.
+  </p>
+
+  <blockquote class="q">
+    What happens when the <code>src</code> url is changed?  <ul><li>Try <code>src="800x200"</code>, <code>src="800x800"</code>, or something unexpected like <code>src="eSp1nQ"</code>.
+  </blockquote>
+  <p class="a">
+    The sources that exist are displayed, but when the source does not exist, the alt text is displayed instead.
+  </p>
+
+  <blockquote class="q">
+    What happens if quotation marks are removed from around the <code>src</code> attribute?
+  </blockquote>
+  <p class="a">
+    As long as the source contains no spaces, it will still work. Otherwise, the browser will not know where the source ends and the next attribute begins.
+  </p>
+
+  <blockquote class="q">
+    What happens if quotation marks are removed from around the <code>alt</code> attribute?
+  </blockquote>
+  <p class="a">
+    As with the <code>src</code> attribute, the browser will not know where the attribute ends and the next attribute begins if there are spaces present in the alt text.
+  </p>
+
+  <blockquote class="q">
+    How might the <code>title</code> attribute help us?
+  </blockquote>
+  <p class="a">
+    Browsers will display the title text when the mouse is hovered over the image, and screen readers will read the title text aloud.
+  </p>
+</section>
+
+<section>
+  <h2>02_size_css.html</h2>
+
+  <blockquote class="q">
+    What happens when both <code>width</code> and <code>height</code> CSS properties are used simultaneously? Does this image look 'right'?
+  </blockquote>
+  <p class="a">
+    The aspect ratio of the image is not maintained, so the image looks stretched.
+  </p>
+
+  <blockquote class="q">
+    What happens if a second image is added to the page?  Are both images formatted the same?
+  </blockquote>
+  <p class="a">
+    In this case, since the <code>img</code> selector is used, both images are formatted the same.
+  </p>
+
+  <blockquote class="q">
+    What happens if the <code>font-size</code> in the <code>body</code> rule is changed to <code>2em</code>, <code>3em</code> or larger?
+  </blockquote>
+  <p class="a">
+    The image will be larger, since the <code>width</code> is defined in <code>rem</code>s, which are relative to the font size.
+  </p>
+
+  <blockquote class="q">
+    What alternative sizing units are there?
+  </blockquote>
+  <p class="a">
+    <code>%</code> is relative to the parent element, <code>em</code> is relative to the font size, and <code>vmin</code> is relative to the viewport size. <code>vmin</code> will choose the smallest of the viewport's height or width, so it is useful for ensuring that an image will fit on the screen.
+  </p>
+</section>
+
+</article>
